@@ -1,4 +1,4 @@
-window.onload = () => {
+// window.onload = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const logo = document.getElementById("logo");
@@ -12,7 +12,7 @@ window.onload = () => {
     canvas.height = screen.height;
     canvas.width = screen.width;
   
-    for (let i = 0; i <= videoInfo.totalFrames; i++) {
+    for (let i = 1; i <= videoInfo.totalFrames; i++) {
       const img = new Image();
       img.src = videoInfo.currentImage(i);
       videoInfo.images.push(img);
@@ -28,28 +28,28 @@ window.onload = () => {
         end: `bottom+=${videoInfo.totalFrames * videoInfo.totalTime}`,
         scrub: 2,
         pin: true,
-        markers: true,
+        // markers: true,
       },
       onUpdate: render,
     });
   
     videoInfo.images[0].onload = () => {
-      canvasContext.drawImage(videoInfo.images[0], 0, 0);
+      canvasContext.drawImage(videoInfo.images[0], 0, 0, screen.width, screen.height);
     };
   
-    render = () => {
-      canvasContext.drawImage(videoInfo.images[videoInfo.currentFrame], 0, 0);
+    function render() {
+      canvasContext.drawImage(videoInfo.images[videoInfo.currentFrame], 0, 0, screen.width, screen.height);
     }
   }
   
   const demoVideo1Info = {
-    totalFrames: 197,
+    totalFrames: 150,
     totalTime: 7,
     images: [],
-    currentFrame: 0,
+    currentFrame: 1,
     currentImage: (index) =>
-      `../img/scene-1-${index}.jpg`,
+      `../img/scene-1-${index}.jpeg`,
   };
   
   animateOnScroll("video-1", demoVideo1Info);
-}
+// }
