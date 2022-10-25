@@ -1,0 +1,27 @@
+@import "reset";
+@import "base";
+
+.loading{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: 539px;
+  height: 333px;
+  text-indent: 101%;
+  text-wrap: nowrap;
+	overflow: hidden;
+  background-image: url(../img/logo.svg);
+}
+
+.story{
+  min-height: 100vh;
+}
+
+.footer{
+  padding: 12px;
+  text-align: center;
+  color: #666;
+}
