@@ -43,12 +43,12 @@
   }
   
   const demoVideo1Info = {
-    totalFrames: 150,
+    totalFrames: 130,
     totalTime: 7,
     images: [],
     currentFrame: 1,
     currentImage: (index) =>
-      `../img/scene-1-${index}.jpeg`,
+      `./img/scene-1-${index}.jpeg`,
   };
   
   animateOnScroll("video-1", demoVideo1Info);
