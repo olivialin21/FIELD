@@ -1,4 +1,4 @@
-// window.onload = () => {
+window.onload = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const logo = document.getElementById("logo");
@@ -52,4 +52,17 @@
   };
   
   animateOnScroll("video-1", demoVideo1Info);
-// }
+
+  const img_2_1 = document.querySelector(".img-2-1")
+  function imgSwitch() {
+    const moveToNextAt = (img_2_1.offsetTop * 2 / 3) ;
+    if (window.scrollY > moveToNextAt) {
+      img_2_1.classList.add('switch');
+      console.log("switch");
+    } else {
+      img_2_1.classList.remove('switch');
+      console.log("remove");
+    }
+  }
+  window.addEventListener('scroll', imgSwitch);
+}
