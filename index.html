@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIELD DEMO</title>
   <!-- CSS CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/all.css">
 </head>
@@ -17,12 +18,27 @@
     <section class="section2">
       <div class="img-2-1"></div>
       <div class="container d-flex mt-60 gap-40">
-        <img class="img-2-2 mb-300" src="./img/img-2-2.png" alt="img-2-2">
-        <img class="img-2-3 mt-300" src="./img/img-2-3.png" alt="img-2-3">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="img-2-2 mb-300" src="./img/img-2-2.png" alt="img-2-2">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="img-2-3 mt-300" src="./img/img-2-3.png" alt="img-2-3">
+      </div>
+      <!-- <img class="img-2-4 mt-60" src="./img/img-2-4.png" alt="img-2-4"> -->
+      <!-- <img src="./img/img-2-5.png" alt="img-2-5"> -->
+      <div class="story story-2 mt-60">
+        <canvas id="video-2" class="video video-2"></canvas>
+        <img class="img-2-4-1" src="./img/img-2-4-1.png" alt="img-2-4-1">
+        <div class="img-2-4-2"></div>
+      </div>
+      <div class="container d-flex mt-60 gap-40">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img-2-2 mb-300" src="./img/img-2-5.png" alt="img-2-5">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img-2-3 mt-300" src="./img/img-2-6.png" alt="img-2-6">
       </div>
     </section>
-    <section class="story">
-      <canvas id="video-1" class="video"></canvas>
+    <section class="section3">
+    </section>
+    <section>
+      <div class="story">
+        <canvas id="video-1" class="video"></canvas>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -41,6 +57,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JS -->
   <script src="./js/main.js"></script>
 </body>
 </html>

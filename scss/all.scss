@@ -19,7 +19,7 @@
 
 .story{
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .img-2-1{
@@ -34,15 +34,39 @@
 }
 
 .img-2-2{
-  width: 50%;
+  width: calc(50% - 20px);
 }
 .img-2-3{
-  width: 50%;
+  width: calc(50% - 20px);
+}
+.img-2-4{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.section3{
+  min-height: 200vh;
 }
 
 .video{
   width: 100%;
   height: 100%;
+}
+.story-2{
+  position: relative;
+}
+.img-2-4-1{
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  opacity: 0;
+  transition: 1s all;
+}
+.show{
+  opacity: 1;
 }
 
 .footer{
