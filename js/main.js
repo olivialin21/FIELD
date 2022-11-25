@@ -3,9 +3,9 @@ window.onload = () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  const logo = document.getElementById("logo");
+  // const logo = document.getElementById("logo");
 
-  gsap.fromTo(logo, {opacity: 0}, {opacity: 1, duration: 3,delay: 1});
+  // gsap.fromTo(logo, {opacity: 0}, {opacity: 1, duration: 3,delay: 1});
 
   animateOnScroll = (canvasID, videoInfo) => {
     const canvas = document.getElementById(canvasID);
@@ -85,7 +85,6 @@ window.onload = () => {
     } else {
       img_2_4_1.classList.remove('show');
     }
-    // console.log(window.scrollY);
   }
   window.addEventListener('scroll', imgShow);
 

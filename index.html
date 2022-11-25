@@ -12,9 +12,22 @@
 </head>
 <body>
   <main>
-    <section class="loading">
-      <h1 id="logo" class="logo">FIELD</h1>
+    <!-- opening -->
+    <section id="scene_opening" class="scene_opening">
+      <div id="opening_hint" class="opening_hint">
+        <a id="opening_hint_text" href="#">Click to Start</a>
+      </div>
+      <div id="opening_start" class="opening_start">
+        <video id="opening_start_video" class="opening_start_video" src="./img/opening.mp4" onended="opening_end()"></video>
+      </div>
     </section>
+    <!-- scene-1 -->
+    <section class="scene_1">
+      <div class="scene_1_1">
+        <p>這是我待在這裡的第三天</p>
+      </div>
+    </section>
+    <!-- scene-2 -->
     <section class="section2">
       <div class="img-2-1"></div>
       <div class="container d-flex mt-60 gap-40">
@@ -25,8 +38,11 @@
       <!-- <img src="./img/img-2-5.png" alt="img-2-5"> -->
       <div class="story story-2 mt-60">
         <canvas id="video-2" class="video video-2"></canvas>
-        <img class="img-2-4-1" src="./img/img-2-4-1.png" alt="img-2-4-1">
-        <div class="img-2-4-2"></div>
+        <!-- <img class="img-2-4-1" src="./img/img-2-4-1.png" alt="img-2-4-1"> -->
+        <!-- <div class="img-2-4-23">
+          <img src="./img/img-2-4-2.png" alt="img-2-4-2">
+          <img src="./img/img-2-4-3.png" alt="img-2-4-3">
+        </div> -->
       </div>
       <div class="container d-flex mt-60 gap-40">
         <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img-2-2 mb-300" src="./img/img-2-5.png" alt="img-2-5">
@@ -60,5 +76,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- JS -->
   <script src="./js/main.js"></script>
+  <script src="./js/opening.js"></script>
+  <script src="./js/scroll.js"></script>
 </body>
 </html>

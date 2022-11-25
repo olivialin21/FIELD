@@ -52,6 +52,11 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "handWriteFont";
+  src: url("../font/dartsfont.eot"); /* IE9 Compat Modes */
+  src: url("../font/dartsfont.eot?#iefix") format("embedded-opentype"), url("../font/dartsfont.woff2") format("woff2"), url("../font/dartsfont.woff") format("woff"), url("../font/dartsfont.ttf") format("truetype");
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -62,6 +67,10 @@ body {
 
 img {
   display: block;
+}
+
+section {
+  min-height: 100vh;
 }
 
 .container {
@@ -89,20 +98,45 @@ img {
   gap: 40px;
 }
 
-.loading {
+.scene_opening {
+  min-height: 100vh;
+}
+
+.opening_hint {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/opening_background.png);
+  background-position: center;
+  background-size: cover;
+}
+.opening_hint a {
+  color: white;
+  font-size: 24px;
+}
+
+.opening_start {
+  min-height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.opening_start_video {
+  height: 80vh;
+}
+
+.scene_1_1 {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.logo {
-  width: 539px;
-  height: 333px;
-  text-indent: 101%;
-  text-wrap: nowrap;
-  overflow: hidden;
-  background-image: url(../img/logo.svg);
+.scene_1_1 p {
+  font-size: 72px;
+  font-family: handWriteFont, serif;
+  color: white;
 }
 
 .story {
@@ -152,12 +186,18 @@ img {
 
 .img-2-4-1 {
   position: fixed;
-  z-index: 9;
   bottom: 0;
   left: 0;
   width: 80%;
   opacity: 0;
   transition: 1s all;
+}
+
+.img-2-4-23 {
+  position: fixed;
+  top: 300px;
+  right: 40%;
+  width: 50%;
 }
 
 .show {
