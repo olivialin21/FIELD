@@ -166,15 +166,40 @@ section {
 }
 
 .opening_hint {
+  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-image: url(../img/opening_background.png);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+}
+.opening_hint::before {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  left: calc(var(--x) * 100%);
+  top: calc(var(--y) * 100%);
+  transform: translate(-50%, -50%); /*預設居中*/
+  box-shadow: 0 0 0 999vw rgba(0, 0, 0, 0.8); /*足夠大的投影*/
 }
 .opening_hint a {
+  display: block;
+  position: absolute;
+  bottom: 20%;
+  top: auto !important;
+  left: auto !important;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+.opening_hint p {
   color: white;
   font-size: 24px;
 }
@@ -215,10 +240,31 @@ section {
 }
 .scene_1_2 {
   height: 70vh;
-  background-image: url("../img/img_1_2.jpg");
+  background-image: url("../img/img_1_2_origin.jpg");
   background-position: center;
   background-size: cover;
   border-radius: 30%;
+}
+.scene_1_3 {
+  width: 700px;
+  height: 500px;
+  margin: 200px auto 200px;
+  background-image: url("../img/img_1_3_1.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: none;
+  position: relative;
+}
+.scene_1_3::before {
+  display: block;
+  content: "29/11/2022 3:30:30 AM";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .scene_2 {
@@ -286,6 +332,7 @@ section {
 }
 
 .img_2_4_1 {
+  display: none;
   position: fixed;
   bottom: 0;
   left: 0;

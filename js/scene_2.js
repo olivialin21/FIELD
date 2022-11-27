@@ -11,7 +11,7 @@ const video_2_tl = gsap.timeline({
     start: "top top", // when the top of the trigger hits the top of the viewport
     end: "bottom",
     toggleActions: "restart none reverse none",
-    markers: true,
+    // markers: true,
   }
 });
 

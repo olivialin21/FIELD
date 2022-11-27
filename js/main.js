@@ -3,12 +3,10 @@ const img_2_4_1 = document.getElementById("img_2_4_1");
 
 window.onload = () => {
   AOS.init();
-
+  parallaxInstance = new Parallax(document.getElementById("opening_hint"), { 
+    // 參數設定[註1]
+  });
   gsap.registerPlugin(ScrollTrigger);
-
-  // const logo = document.getElementById("logo");
-
-  // gsap.fromTo(logo, {opacity: 0}, {opacity: 1, duration: 3,delay: 1});
 
   animateOnScroll = (canvasID, videoInfo) => {
     const canvas = document.getElementById(canvasID);
