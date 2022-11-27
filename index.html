@@ -21,42 +21,48 @@
         <video id="opening_start_video" class="opening_start_video" src="./img/opening.mp4" onended="opening_end()"></video>
       </div>
     </section>
-    <!-- scene-1 -->
+    <!-- scene_1 -->
     <section class="scene_1">
       <div class="scene_1_1">
         <p id="scene_1_1_text">這是我待在這裡的第三天</p>
       </div>
-      <div class="scene_1_2">
-
+      <div class="container borderBlur scene_1_2">
+        
       </div>
     </section>
     <!-- scene-2 -->
-    <section class="scene">
-      <div class="img-2-1"></div>
+    <section class="mt-60 scene_2">
+      <div class="borderBlur img_2_1"></div>
       <div class="container d-flex mt-60 gap-40">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="img-2-2 mb-300" src="./img/img-2-2.png" alt="img-2-2">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="img-2-3 mt-300" src="./img/img-2-3.png" alt="img-2-3">
+        <div class="img_2_2 mb-300">
+          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="borderBlur" src="./img/img_2_2.png" alt="img_2_2">
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="chat chat-gray">妤晴～</p>
+        </div>
+        <div class="img_2_3 mt-300">
+          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" class="borderBlur" src="./img/img_2_3.png" alt="img_2_3">
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="chat chat-gray chat_2_1">要不要一起吃午餐啊？</p>
+        </div>
       </div>
-      <!-- <img class="img-2-4 mt-60" src="./img/img-2-4.png" alt="img-2-4"> -->
-      <!-- <img src="./img/img-2-5.png" alt="img-2-5"> -->
-      <div class="story story-2 mt-60">
-        <canvas id="video-2" class="video video-2"></canvas>
-        <!-- <img class="img-2-4-1" src="./img/img-2-4-1.png" alt="img-2-4-1"> -->
-        <!-- <div class="img-2-4-23">
-          <img src="./img/img-2-4-2.png" alt="img-2-4-2">
-          <img src="./img/img-2-4-3.png" alt="img-2-4-3">
-        </div> -->
+      <!-- <img src="./img/img_2_5.png" alt="img_2_5"> -->
+      <div class="mt-60 story story_2">
+        <p class="chat chat_2_4_1">我今天有自己準備便當喔～下次再一起吃吧！</p>
+        <canvas id="video_2" class="video video_2"></canvas>
+        <img id="img_2_4_1" class="img_2_4_1" src="./img/img_2_4_1.png" alt="img_2_4_1">
+        <!-- <div class="img_2_4_23"> -->
+        <img id="img_2_4_1" src="./img/img_2_4_2.png" alt="img_2_4_2">
+        <img id="img_2_4_1" src="./img/img_2_4_3.png" alt="img_2_4_3">
+        <!-- </div> -->
       </div>
       <div class="container d-flex mt-60 gap-40">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img-2-2 mb-300" src="./img/img-2-5.png" alt="img-2-5">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img-2-3 mt-300" src="./img/img-2-6.png" alt="img-2-6">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img_2_2 mb-300" src="./img/img_2_5.png" alt="img_2_5">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img_2_3 mt-300" src="./img/img_2_6.png" alt="img_2_6">
       </div>
     </section>
     <section class="section3">
     </section>
     <section>
       <div class="story">
-        <canvas id="video-1" class="video"></canvas>
+        <canvas id="video_1" class="video"></canvas>
       </div>
     </section>
   </main>
@@ -81,6 +87,6 @@
   <script src="./js/main.js"></script>
   <script src="./js/scroll.js"></script>
   <script src="./js/opening.js"></script>
-  <script src="./js/scene_1.js"></script>
+  <script src="./js/scene_2.js"></script>
 </body>
 </html>

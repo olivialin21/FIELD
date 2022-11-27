@@ -1,8 +1,8 @@
+const video_2 = document.getElementById("video_2");
+const img_2_4_1 = document.getElementById("img_2_4_1");
+
 window.onload = () => {
   AOS.init();
-
-  window.scrollTo(0,0);
-  console.log("scrollTo");
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -53,7 +53,7 @@ window.onload = () => {
     images: [],
     currentFrame: 1,
     currentImage: (index) =>
-      `./img/scene-1-${index}.jpeg`,
+      `./img/scene_1_${index}.jpeg`,
   };
 
   const demoVideo2Info = {
@@ -62,16 +62,16 @@ window.onload = () => {
     images: [],
     currentFrame: 1,
     currentImage: (index) =>
-      `./img/scene-2-${index}.jpg`,
+      `./img/scene_2_${index}.jpg`,
   };
   
-  animateOnScroll("video-1", demoVideo1Info);
-  animateOnScroll("video-2", demoVideo2Info);
+  animateOnScroll("video_1", demoVideo1Info);
+  animateOnScroll("video_2", demoVideo2Info);
 
-  const img_2_1 = document.querySelector(".img-2-1")
+  const img_2_1 = document.querySelector(".img_2_1")
   function imgSwitch() {
-    const moveToNextAt = (img_2_1.offsetTop * 2 / 3) ;
-    if (window.scrollY > moveToNextAt) {
+    const switchPoint = (img_2_1.offsetTop - 200) ;
+    if (window.pageYOffset > switchPoint) {
       img_2_1.classList.add('switch');
     } else {
       img_2_1.classList.remove('switch');
@@ -79,16 +79,14 @@ window.onload = () => {
   }
   window.addEventListener('scroll', imgSwitch);
 
-  const story_2 = document.querySelector(".story-2")
-  const img_2_4_1 = document.querySelector(".img-2-4-1")
-  function imgShow() {
-    const moveToNextAt = story_2.offsetTop;
-    if (window.scrollY > moveToNextAt && window.scrollY < 3300) {
-      img_2_4_1.classList.add('show');
-    } else {
-      img_2_4_1.classList.remove('show');
-    }
-  }
-  window.addEventListener('scroll', imgShow);
+  // function imgShow() {
+  //   const moveToNextAt = story_2.offsetTop;
+  //   if (window.pageYOffset > moveToNextAt && window.scrollY < 3300) {
+  //     img_2_4_1.classList.add('show');
+  //   } else {
+  //     img_2_4_1.classList.remove('show');
+  //   }
+  // }
+  // window.addEventListener('scroll', imgShow);
 
 }
