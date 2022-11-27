@@ -1,6 +1,9 @@
 window.onload = () => {
   AOS.init();
 
+  window.scrollTo(0,0);
+  console.log("scrollTo");
+
   gsap.registerPlugin(ScrollTrigger);
 
   // const logo = document.getElementById("logo");

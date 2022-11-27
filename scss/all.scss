@@ -1,7 +1,7 @@
 @import "reset";
 @import "font";
-@import "base";
 @import "utilities";
+@import "base";
 @import "page/opening";
 @import "page/scene_1";
 
@@ -59,9 +59,7 @@
   width: 50%;
 }
 
-.show{
-  opacity: 1;
-}
+
 
 .footer{
   padding: 12px;
