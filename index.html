@@ -27,50 +27,68 @@
       <div class="scene_1_1">
         <p id="scene_1_1_text">這是我待在這裡的第三天</p>
       </div>
-      <div id="scene_1_2" class="container borderBlur scene_1_2"></div>
-      <div id="scene_1_3" class="container borderBlur scene_1_3"></div>
+      <div id="scene_1_2" class="container borderBlur scene_1_2">
+        <img id="img_1_2_1" src="./img/img_1_2_1.jpg" alt="img_1_2_1">
+        <img id="img_1_2_2" src="./img/img_1_2_2.jpg" alt="img_1_2_2">
+        <img id="img_1_2_3" src="./img/img_1_2_3.jpg" alt="img_1_2_3">
+      </div>
+      <div id="scene_1_3" class="container borderBlur scene_1_3 cctv">
+        <p>29/11/2022 3:30:30 AM</p>
+        <img id="img_1_3_2" src="./img/img_1_3_2.jpg" alt="img_1_3_2">
+      </div>
     </section>
     <!-- scene-2 -->
     <section class="mt-60 scene_2">
       <div class="borderBlur img_2_1"></div>
       <div class="container d-flex mt-60 gap-40">
         <div class="img_2_2 mb-300">
-          <!-- data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" -->
-          <img class="borderBlur" src="./img/img_2_2.png" alt="img_2_2">
-          <p class="chat chat-gray">妤晴～</p>
+          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="borderBlur" src="./img/img_2_2.png" alt="img_2_2">
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" class="chat chat-gray">妤晴～</p>
         </div>
         <div class="img_2_3 mt-300">
           <!-- data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" -->
-          <img class="borderBlur" src="./img/img_2_3.png" alt="img_2_3">
-          <p data-aos-delay="150" class="chat chat-gray chat_2_1">要不要一起吃午餐啊？</p>
+          <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="borderBlur" src="./img/img_2_3.png" alt="img_2_3">
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" class="chat chat-gray chat_2_1">要不要一起吃午餐啊？</p>
         </div>
       </div>
       <!-- <img src="./img/img_2_5.png" alt="img_2_5"> -->
       <div class="mt-60 story story_2">
-        <p class="chat chat_2_4_1">我今天有自己準備便當喔～下次再一起吃吧！</p>
+        <!-- <p class="chat chat_2_4_1">我今天有自己準備便當喔～下次再一起吃吧！</p> -->
         <canvas id="video_2" class="video video_2"></canvas>
         <img id="img_2_4_1" class="img_2_4_1" src="./img/img_2_4_1.png" alt="img_2_4_1">
-        <!-- <div class="img_2_4_23"> -->
-        <img id="img_2_4_1" src="./img/img_2_4_2.png" alt="img_2_4_2">
-        <img id="img_2_4_1" src="./img/img_2_4_3.png" alt="img_2_4_3">
-        <!-- </div> -->
+        <!-- <div class="img_2_4_23">
+          <img id="img_2_4_1" src="./img/img_2_4_2.png" alt="img_2_4_2">
+          <img id="img_2_4_1" src="./img/img_2_4_3.png" alt="img_2_4_3">
+        </div> -->
       </div>
       <div class="container d-flex mt-60 gap-40">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img_2_2 mb-300" src="./img/img_2_5.png" alt="img_2_5">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000" class="img_2_3 mt-300" src="./img/img_2_6.png" alt="img_2_6">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="img_2_2 mb-300" src="./img/img_2_5.png" alt="img_2_5">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="img_2_3 mt-300" src="./img/img_2_6.png" alt="img_2_6">
+      </div>
+      <div clss="coming_soon">
+        <p>coming soon</p>
       </div>
     </section>
-    <section class="section3">
+    <!-- <section class="section3">
     </section>
     <section>
       <div class="story">
         <canvas id="video_1" class="video"></canvas>
       </div>
-    </section>
+    </section> -->
   </main>
   <footer class="footer">
     <p>Copyright © 2022 FIELD team. All rights reserved.</p>
-  </footer>  
+  </footer>
+  <!-- settings -->
+  <div class="settings">
+    <input type="checkbox" id="sound" class="checkbox">
+    <label id="sound_label" for="sound">Sound</label>
+    <input type="checkbox" id="auto_scroll" class="checkbox">
+    <label for="auto_scroll">Auto Scroll</label>
+    <!-- <input type="checkbox" id="full-screen" class="checkbox">
+    <label id="full-screen-label" for="full-screen">Full Screen</label> -->
+  </div>
   <!-- JS CDN -->
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"

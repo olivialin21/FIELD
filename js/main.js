@@ -1,6 +1,3 @@
-const video_2 = document.getElementById("video_2");
-const img_2_4_1 = document.getElementById("img_2_4_1");
-
 window.onload = () => {
   AOS.init();
   parallaxInstance = new Parallax(document.getElementById("opening_hint"), { 
@@ -63,7 +60,7 @@ window.onload = () => {
       `./img/scene_2_${index}.jpg`,
   };
   
-  animateOnScroll("video_1", demoVideo1Info);
+  // animateOnScroll("video_1", demoVideo1Info);
   animateOnScroll("video_2", demoVideo2Info);
 
   const img_2_1 = document.querySelector(".img_2_1")
@@ -76,15 +73,4 @@ window.onload = () => {
     }
   }
   window.addEventListener('scroll', imgSwitch);
-
-  // function imgShow() {
-  //   const moveToNextAt = story_2.offsetTop;
-  //   if (window.pageYOffset > moveToNextAt && window.scrollY < 3300) {
-  //     img_2_4_1.classList.add('show');
-  //   } else {
-  //     img_2_4_1.classList.remove('show');
-  //   }
-  // }
-  // window.addEventListener('scroll', imgShow);
-
 }

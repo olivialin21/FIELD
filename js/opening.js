@@ -6,7 +6,7 @@ const opening_start_video = document.getElementById("opening_start_video");
 const scene_1_1_text = document.getElementById("scene_1_1_text");
 
 // window.onload = () => {
-  scrollDisable();
+  // scrollDisable();
 
   scene_opening.addEventListener('click', function () {
     gsap.fromTo(opening_hint, {opacity: 1},{opacity: 0, duration: 2});
@@ -22,10 +22,19 @@ const scene_1_1_text = document.getElementById("scene_1_1_text");
     e.preventdefault();
   }
 
+  function playTypeAudio() {
+    const audio = document.createElement("audio");
+    audio.src = "../music/type.mp3";
+    audio.play();
+    setTimeout(() => { audio.pause(); audio.currentTime = 0; }, 5000);
+  }
+
   opening_end = () => {
+    playTypeAudio()
     scene_opening.style.display="none";
     scene_1_1_text.classList.add("action");
-    scrollEnable();
+    AOS.refresh();
+    // setTimeout(() => { scrollEnable(); }, 7000);
   }
 
   scene_opening.addEventListener('mousemove', (ev) => {
