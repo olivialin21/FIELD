@@ -35,8 +35,10 @@ const settings = document.getElementById("settings");
     scene_opening.style.display="none";
     scene_1_1_text.classList.add("action");
     AOS.refresh();
-    setTimeout(() => { scrollEnable(); }, 5000);
-    settings.classList.add("show");
+    setTimeout(() => {
+      scrollEnable();
+      settings.style.opacity=1;
+    }, 5000);
   }
 
   scene_opening.addEventListener('mousemove', (ev) => {
