@@ -4,6 +4,7 @@ const opening_hint_text = document.getElementById("opening_hint_text")
 const opening_start = document.getElementById("opening_start");
 const opening_start_video = document.getElementById("opening_start_video");
 const scene_1_1_text = document.getElementById("scene_1_1_text");
+const settings = document.getElementById("settings");
 
 // window.onload = () => {
   scrollDisable();
@@ -26,7 +27,7 @@ const scene_1_1_text = document.getElementById("scene_1_1_text");
     const audio = document.createElement("audio");
     audio.src = "../music/type.mp3";
     audio.play();
-    setTimeout(() => { audio.pause(); audio.currentTime = 0; }, 5000);
+    setTimeout(() => { audio.pause(); audio.currentTime = 0; }, 3000);
   }
 
   opening_end = () => {
@@ -34,7 +35,8 @@ const scene_1_1_text = document.getElementById("scene_1_1_text");
     scene_opening.style.display="none";
     scene_1_1_text.classList.add("action");
     AOS.refresh();
-    setTimeout(() => { scrollEnable(); }, 7000);
+    setTimeout(() => { scrollEnable(); }, 5000);
+    settings.classList.add("show");
   }
 
   scene_opening.addEventListener('mousemove', (ev) => {
